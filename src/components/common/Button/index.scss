@@ -1,0 +1,18 @@
+.button {
+  padding: 8px 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .25s ease;
+
+  &_color_primary {
+    border-color: rgb(30, 167, 253);
+    color: rgb(30, 167, 253);
+    background: rgb(255, 255, 255);
+
+    &:hover {
+      color: rgb(255, 255, 255);
+      background: rgb(30, 167, 253);
+    }
+  }
+}

@@ -1,0 +1,73 @@
+$breakPoints: (xs: 440, sm: 600, md: 768, lg: 992, xl: 1280, xxl: 1920);
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+
+  @each $point, $maxWidth in $breakPoints {
+    &_maxWidth_#{$point} {
+      max-width: #{$maxWidth}px;
+    }
+  }
+
+  &_flexDirection {
+    &_column {
+      flex-direction: column;
+    }
+
+    &_row {
+      font-display: row;
+    }
+  }
+
+  &_justifyContent {
+    &_flex-start {
+      justify-content: flex-start;
+    }
+
+    &_flex-end {
+      justify-content: flex-end;
+    }
+
+    &_center {
+      justify-content: center;
+    }
+
+    &_space-around {
+      justify-content: space-around;
+    }
+
+    &_space-between {
+      justify-content: space-between;
+    }
+  }
+
+  &_alignItems {
+    &_flex-start {
+      align-items: flex-start;
+    }
+
+    &_flex-end {
+      align-items: flex-end;
+    }
+
+    &_center {
+      align-items: center;
+    }
+  }
+
+  &_flexWrap {
+    &_wrap {
+      flex-wrap: wrap;
+    }
+
+    &_nowrap {
+      flex-wrap: nowrap;
+    }
+  }
+  
+}

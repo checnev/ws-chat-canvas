@@ -1,0 +1,21 @@
+@use 'sass:math';
+$breakPoints: (xs: 0, sm: 600, md: 768, lg: 992, xl: 1280, xxl: 1920);
+
+.gridRow {
+  &__column {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @each $point, $minWidth in $breakPoints {
+      @media screen and (min-width: #{$minWidth}px) {
+        @for $i from 1 through 12 {
+          &_#{$point}_#{$i} {
+            max-width: percentage($i/12);
+            flex-basis: percentage($i/12);
+            flex-grow: 0;
+          }
+        }
+      }
+    }
+  }
+}

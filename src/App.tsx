@@ -1,26 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import UserProvider from 'context/user';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import PrivateRoute from 'containers/PrivateRoute';
+import './App.scss';
+import 'fontsource-roboto';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Layout from 'components/blocks/Layout';
+import ChatPage from 'components/pages/Chat';
+import CanvasPage from 'components/pages/Canvas';
+import MainPage from 'components/pages/Main';
+import SignInPage from 'components/pages/SignIn';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <UserProvider>
+          <Router>
+              <Switch>
+                <Route exact path="/">
+                  <Layout>
+                    <MainPage />
+                  </Layout>
+                </Route>
+                <PrivateRoute exact path="/chat">
+                    <Layout fixed>
+                      <ChatPage />
+                    </Layout>
+                </PrivateRoute>
+                <PrivateRoute exact path="/canvas">
+                    <Layout fixed>
+                      <CanvasPage />
+                    </Layout>
+                </PrivateRoute>
+                <Route exact path="/signin">
+                  <Layout>
+                    <SignInPage />
+                  </Layout>
+                </Route>
+                <Route path="*">
+                  404
+                </Route>
+              </Switch>
+          </Router>
+        </UserProvider>
+      </div>
+    );
+  }
 }
 
 export default App;

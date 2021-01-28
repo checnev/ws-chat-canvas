@@ -1,0 +1,14 @@
+.chat {
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, .1);
+
+  .gridRow {
+    height: 100%;
+
+    .gridRow__column:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}

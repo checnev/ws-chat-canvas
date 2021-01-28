@@ -1,0 +1,14 @@
+.chatPage {
+  height: 100%;
+  padding-top: 30px;
+
+  .container {
+    height: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    &__online {
+      margin-top: 20px;
+    }
+  }
+}

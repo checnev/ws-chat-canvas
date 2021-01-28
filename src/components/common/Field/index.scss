@@ -1,0 +1,37 @@
+.input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 10px 12px;
+  margin-bottom: 3px;
+
+  &_invalid {
+    border-color: rgb(233, 86, 86);
+  }
+
+  &__label {
+    display: block;
+
+    &_hasLabel {
+      padding-top: 10px;
+    }
+  }
+
+  &__helpMessage {
+    display: block;
+    color: rgb(233, 86, 86);
+  }
+
+  &__fieldWrapper {
+    position: relative;
+  }
+
+  &__labelText {
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    background: rgb(255, 255, 255);
+    padding: 2px 5px;
+    color: rgb(153, 153, 153);
+    font-size: .8em;
+  }
+}

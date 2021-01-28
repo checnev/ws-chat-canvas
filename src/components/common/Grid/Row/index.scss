@@ -1,0 +1,54 @@
+.gridRow {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-right: -15px;
+
+  &_flexDirection {
+    &_column {
+      flex-direction: column;
+    }
+
+    &_row {
+      font-display: row;
+    }
+  }
+
+  &_justifyContent {
+    &_flex-start {
+      justify-content: flex-start;
+    }
+
+    &_flex-end {
+      justify-content: flex-end;
+    }
+
+    &_center {
+      justify-content: center;
+    }
+
+    &_space-around {
+      justify-content: space-around;
+    }
+
+    &_space-between {
+      justify-content: space-between;
+    }
+  }
+
+  &_alignItems {
+    &_flex-start {
+      align-items: flex-start;
+    }
+
+    &_flex-end {
+      align-items: flex-end;
+    }
+
+    &_center {
+      align-items: center;
+    }
+  }
+  
+}

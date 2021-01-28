@@ -1,0 +1,9 @@
+.canvasPage {
+  padding-top: 30px;
+
+  @media screen and (max-width: 600px) {
+    &__online {
+      margin-top: 20px;
+    }
+  }
+}

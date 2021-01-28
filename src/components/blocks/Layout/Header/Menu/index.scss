@@ -1,0 +1,62 @@
+@import '~material-icons/css/material-icons.scss';
+
+.headerMenu {
+  &__items > li:first-child{
+    margin-left: -12px;
+  }
+
+  &__link {
+    display: inline-block;
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__burger {
+    @include material-icons();
+    @include material-icon('menu');
+    padding: 10px 0;
+
+    &_open {
+      @include material-icon('close');
+    }
+
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+
+  .menu__link_active {
+    color: rgb(30, 167, 253);
+    border-color: rgb(30, 167, 253);
+  }
+
+  @media screen and (max-width: 599px) {
+    .menu__items {
+      display: none;
+    }
+
+    .menu__item {
+      display: block;
+      > .headerMenu__link {
+        display:block;
+        border-bottom-width: 1px;
+        border-color: rgba(0, 0, 0, .25);
+      }
+    }
+
+    &_open {
+      .menu__items {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: calc(100% + 1px);
+        left: 0;
+        z-index: 1;
+        background: rgb(255, 255, 255);
+        padding: 10px 0;
+      }
+    }
+  }
+}

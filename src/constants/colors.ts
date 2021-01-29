@@ -1,11 +1,11 @@
 export type Color = string;
 export const colors: Color[] = [
-  '#fed6bc',
-  '#fffadd',
+  '#ffd04e',
+  '#ec7380',
   '#77dd77',
-  '#e7ecff',
-  '#c3fbd8',
-  '#fdeed9',
-  '#b5f2ea',
-  '#c6d8ff',
+  '#50bade',
+  '#ffe5b4',
+  '#d191f9',
+  '#3a9ff1',
+  '#ffc2ce',
 ];

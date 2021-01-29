@@ -2,6 +2,8 @@ import React from 'react';
 import { Formik, FormikErrors, FormikProps} from 'formik';
 import AuthForm, { AuthFormValues } from 'components/AuthForm';
 import { UserContext } from 'context/user';
+import { colors } from 'constants/colors';
+import { randomNumber } from 'utils/random';
 
 class AuthFormContainer extends React.Component {
   static contextType = UserContext;
@@ -12,7 +14,7 @@ class AuthFormContainer extends React.Component {
       <Formik
         initialValues={{
           name: '',
-          color: '#fffadd',
+          color: colors[randomNumber(0, colors.length - 1)],
         }}
         onSubmit={(values: AuthFormValues) => {
           const user = {

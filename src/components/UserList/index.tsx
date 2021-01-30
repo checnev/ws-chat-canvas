@@ -17,7 +17,7 @@ class UserList extends React.Component<UserListProps> {
     return (
       <ul className={clsx(this.props.className, userList())}>
         {this.props.users.map((user) => (
-          <li key={user.id}>
+          <li key={user.name}>
             <UserInfo user={user} />
           </li>
         ))}

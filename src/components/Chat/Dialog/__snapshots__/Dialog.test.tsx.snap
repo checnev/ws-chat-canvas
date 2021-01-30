@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Dialog 1`] = `
+"<div class=\\"dialog\\">
+  <div class=\\"dialog__window\\">
+    <div class=\\"dialog__messages\\">
+      <div class=\\"message message_direction_out\\">
+        <div class=\\"message__text\\">Come back to the village!</div>
+        <div class=\\"message__author\\">
+          <div class=\\"userInfo\\">
+            <div class=\\"userInfo__avatar\\" style=\\"background-color: green;\\">N</div><span class=\\"userInfo__username\\">Naruto</span>
+          </div><span class=\\"message__date\\">30.01.2021 14:00:00</span>
+        </div>
+      </div>
+      <div class=\\"message message_direction_in\\">
+        <div class=\\"message__text\\">No!</div>
+        <div class=\\"message__author\\">
+          <div class=\\"userInfo\\">
+            <div class=\\"userInfo__avatar\\" style=\\"background-color: orange;\\">S</div><span class=\\"userInfo__username\\">Sasuke</span>
+          </div><span class=\\"message__date\\">30.01.2021 15:00:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

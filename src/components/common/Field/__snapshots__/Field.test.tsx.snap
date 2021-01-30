@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field component should render Field 1`] = `
+"<label class=\\"input__label input__label_hasLabel\\">
+  <div class=\\"input__fieldWrapper\\"><span class=\\"input__labelText\\">Field Label</span><input type=\\"text\\" class=\\"input input_type_text\\"></div>
+</label>"
+`;
+
+exports[`Field component should render Field with helpMessage 1`] = `
+"<label class=\\"input__label input__label_hasLabel\\">
+  <div class=\\"input__fieldWrapper\\"><span class=\\"input__labelText\\">Field Label</span><input type=\\"text\\" class=\\"input input_type_text input_invalid\\"></div><small class=\\"input__helpMessage\\">invalid value</small>
+</label>"
+`;

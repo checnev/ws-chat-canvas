@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render UserInfo 1`] = `
+"<div class=\\"userInfo\\">
+  <div class=\\"userInfo__avatar\\" style=\\"background-color: green;\\">N</div><span class=\\"userInfo__username\\">Naruto</span>
+</div>"
+`;

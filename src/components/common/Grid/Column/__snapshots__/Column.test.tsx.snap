@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render GridColumn with size props 1`] = `"<div class=\\"gridRow__column gridRow__column_xs_12 gridRow__column_sm_10 gridRow__column_md_8 gridRow__column_lg_6 gridRow__column_xl_4 gridRow__column_xxl_2\\">Grid Column Text</div>"`;

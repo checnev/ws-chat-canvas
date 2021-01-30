@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container component should render Container 1`] = `"<div class=\\"container\\">Container Text</div>"`;
+
+exports[`Container component should render customized Container 1`] = `"<div class=\\"container container_maxWidth_lg container_justifyContent_center container_alignItems_center container_flexWrap_wrap container_FlexDirection_row\\">Container Text</div>"`;

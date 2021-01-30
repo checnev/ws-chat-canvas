@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridRow component should render GridRow 1`] = `"<div class=\\"gridRow\\">Grid Column Text</div>"`;
+
+exports[`GridRow component should render GridRow with props 1`] = `"<div class=\\"gridRow gridRow_justifyContent_center gridRow_alignItems_center gridRow_flexDirection_column\\">Grid Column Text</div>"`;

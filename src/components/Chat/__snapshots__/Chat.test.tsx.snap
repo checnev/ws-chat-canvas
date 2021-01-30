@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Chat 1`] = `
+"<div class=\\"chat\\">
+  <div class=\\"gridRow\\">
+    <div class=\\"gridRow__column gridRow__column_xs_12\\">
+      <div class=\\"dialog\\">
+        <div class=\\"dialog__window\\">
+          <div class=\\"dialog__messages\\"></div>
+        </div>
+      </div>
+      <form action=\\"#\\" class=\\"chatForm\\"><textarea name=\\"text\\" placeholder=\\"What's new ?\\"></textarea><button type=\\"submit\\" class=\\"chatForm__submit\\"></button></form>
+    </div>
+  </div>
+</div>"
+`;

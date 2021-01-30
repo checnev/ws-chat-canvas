@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Button 1`] = `"<button class=\\"button button_color_primary\\">Button Text</button>"`;

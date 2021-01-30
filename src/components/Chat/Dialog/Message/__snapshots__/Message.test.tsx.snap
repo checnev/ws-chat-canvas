@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message component should render incoming Message 1`] = `
+"<div class=\\"message message_direction_in\\">
+  <div class=\\"message__text\\">Test Message</div>
+  <div class=\\"message__author\\">
+    <div class=\\"userInfo\\">
+      <div class=\\"userInfo__avatar\\" style=\\"background-color: green;\\">N</div><span class=\\"userInfo__username\\">Naruto</span>
+    </div><span class=\\"message__date\\">30.01.2021 00:00:00</span>
+  </div>
+</div>"
+`;
+
+exports[`Message component should render outcoming Message 1`] = `
+"<div class=\\"message message_direction_out\\">
+  <div class=\\"message__text\\">Test Message</div>
+  <div class=\\"message__author\\">
+    <div class=\\"userInfo\\">
+      <div class=\\"userInfo__avatar\\" style=\\"background-color: green;\\">N</div><span class=\\"userInfo__username\\">Naruto</span>
+    </div><span class=\\"message__date\\">30.01.2021 00:00:00</span>
+  </div>
+</div>"
+`;

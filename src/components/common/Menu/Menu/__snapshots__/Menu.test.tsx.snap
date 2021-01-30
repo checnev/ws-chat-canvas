@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Menu 1`] = `
+"<nav class=\\"menu\\">
+  <ul class=\\"menu__items menu__items_orientation_vertical\\" role=\\"menu\\"></ul>
+</nav>"
+`;

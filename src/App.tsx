@@ -1,7 +1,7 @@
 import React from 'react';
 import UserProvider from 'context/user';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -14,6 +14,7 @@ import ChatPage from 'components/pages/Chat';
 import CanvasPage from 'components/pages/Canvas';
 import MainPage from 'components/pages/Main';
 import SignInPage from 'components/pages/SignIn';
+import NotFoundPage from 'components/pages/NotFound';
 
 class App extends React.Component {
   render() {
@@ -43,7 +44,9 @@ class App extends React.Component {
                   </Layout>
                 </Route>
                 <Route path="*">
-                  404
+                  <Layout fixed>
+                    <NotFoundPage />
+                  </Layout>
                 </Route>
               </Switch>
           </Router>

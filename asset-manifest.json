@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://checnev.github.io/ws-chat-canvas/static/css/main.8f3d0c34.chunk.css",
-    "main.js": "https://checnev.github.io/ws-chat-canvas/static/js/main.39f57733.chunk.js",
-    "main.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/main.39f57733.chunk.js.map",
+    "main.js": "https://checnev.github.io/ws-chat-canvas/static/js/main.53e261ac.chunk.js",
+    "main.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/main.53e261ac.chunk.js.map",
     "runtime-main.js": "https://checnev.github.io/ws-chat-canvas/static/js/runtime-main.aa75eff3.js",
     "runtime-main.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/runtime-main.aa75eff3.js.map",
     "static/css/2.53cbce06.chunk.css": "https://checnev.github.io/ws-chat-canvas/static/css/2.53cbce06.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.53cbce06.chunk.css",
     "static/js/2.7e5e3430.chunk.js",
     "static/css/main.8f3d0c34.chunk.css",
-    "static/js/main.39f57733.chunk.js"
+    "static/js/main.53e261ac.chunk.js"
   ]
 }

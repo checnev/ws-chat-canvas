@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, FormikErrors, FormikProps} from 'formik';
+import { Formik, FormikErrors, FormikProps } from 'formik';
 import AuthForm, { AuthFormValues } from 'components/AuthForm';
 import { UserContext } from 'context/user';
 import { colors } from 'constants/colors';

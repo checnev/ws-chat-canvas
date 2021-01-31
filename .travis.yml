@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - node
+cache:
+  directories:
+    - "node_modules"
+script:
+  - npm run build
+notifications:
+  email: false
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  edge: true
+  committer_from_gh: true
+  cleanup: false
+  keep_history: true
+  local_dir: build
+  on:
+    branch: main

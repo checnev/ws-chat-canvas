@@ -17,12 +17,14 @@ class AuthFormContainer extends React.Component {
           color: colors[randomNumber(0, colors.length - 1)],
         }}
         onSubmit={(values: AuthFormValues) => {
-          const user = {
-            name: values.name,
-            color: values.color,
-          };
+          if (!this.context.isFetching) {
+            const user = {
+              name: values.name,
+              color: values.color,
+            };
 
-          this.context.signin(user);
+            this.context.signin(user);
+          }
         }}
         validate={(values: AuthFormValues) => {
           const errors: FormikErrors<AuthFormValues> = {};
@@ -34,7 +36,7 @@ class AuthFormContainer extends React.Component {
           return errors;
         }}
       >
-        {(props: FormikProps<AuthFormValues>) => <AuthForm {...props} />}
+        {(props: FormikProps<AuthFormValues>) => <AuthForm {...props} isFetching={this.context.isFetching} />}
       </Formik>
     );
   }

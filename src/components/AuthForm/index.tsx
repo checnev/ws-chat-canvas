@@ -11,13 +11,15 @@ export interface AuthFormValues {
   color: string;
 }
 
-type AuthFormProps = FormikProps<AuthFormValues>;
+type AuthFormProps = FormikProps<AuthFormValues> & {
+  isFetching: boolean;
+};
 
 class AuthForm extends React.Component<AuthFormProps> {
   render() {
     const form = cn('authForm');
     return (
-      <Form className={form()}>
+      <Form className={form({ fetching: this.props.isFetching })}>
         <div className={form('fieldGroup')}>
           <Field
             name="name"

@@ -6,22 +6,24 @@ import type Request from 'lib/api/Request';
 interface IUserContext {
   user: User | null;
   api: WSApi | null;
+  isFetching: boolean;
   signin: (user: IUser) => any;
 }
 
 export const UserContext = React.createContext<IUserContext>({
   user: null,
   api: null,
+  isFetching: false,
   signin: () => {},
 });
 UserContext.displayName = 'User';
 
-class UserProvider extends React.Component<{}, IUserContext> {
+class UserProvider extends React.Component<{}, Omit<IUserContext, 'signin'>> {
 
   signin = (user: IUser) => {
+    this.setState({ isFetching: true });
 
     const api = WSApi.getInstance();
-
     api.ws.addEventListener('open', () => {
       api.once('signin', (req: Request) => {
         const { id, name, color } = req.data;
@@ -30,10 +32,19 @@ class UserProvider extends React.Component<{}, IUserContext> {
         this.setState({
           user,
           api,
+          isFetching: false,
         });
       });
 
       api.send('signin', user);
+    });
+
+    api.ws.addEventListener('close', () => {
+      this.setState({
+        user: null,
+        api: null,
+        isFetching: false,
+      });
     });
   };
 
@@ -41,12 +52,15 @@ class UserProvider extends React.Component<{}, IUserContext> {
   state = {
     user: null,
     api: null,
-    signin: this.signin,
+    isFetching: false,
   }
 
   render() {
     return (
-      <UserContext.Provider value={this.state}>
+      <UserContext.Provider value={{
+        ...this.state,
+        signin: this.signin,
+      }}>
         {this.props.children}
       </UserContext.Provider>
     );

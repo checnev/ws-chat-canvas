@@ -19,7 +19,7 @@ class AuthFormContainer extends React.Component {
         onSubmit={(values: AuthFormValues) => {
           if (!this.context.isFetching) {
             const user = {
-              name: values.name,
+              name: values.name.trim(),
               color: values.color,
             };
 
@@ -29,7 +29,7 @@ class AuthFormContainer extends React.Component {
         validate={(values: AuthFormValues) => {
           const errors: FormikErrors<AuthFormValues> = {};
 
-          if (!values.name) {
+          if (!values.name.trim()) {
             errors.name = 'User Name is empty!';
           }
 

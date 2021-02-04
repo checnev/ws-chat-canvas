@@ -25,13 +25,13 @@ class ChatFormContainer extends React.Component {
           text: '',
         }}
         onSubmit={(values: ChatFormValues, { resetForm }) => {
-          this.sendMessage(values.text);
+          this.sendMessage(values.text.trim());
           resetForm();
         }}
         validate={(values: ChatFormValues) => {
           const errors: FormikErrors<ChatFormValues> = {};
 
-          if (!values.text) {
+          if (!values.text.trim()) {
             errors.text = 'Text is empty!';
           }
 

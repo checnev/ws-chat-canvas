@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "https://checnev.github.io/ws-chat-canvas/static/css/main.8f3d0c34.chunk.css",
-    "main.js": "https://checnev.github.io/ws-chat-canvas/static/js/main.53e261ac.chunk.js",
-    "main.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/main.53e261ac.chunk.js.map",
+    "main.css": "https://checnev.github.io/ws-chat-canvas/static/css/main.bf7efe18.chunk.css",
+    "main.js": "https://checnev.github.io/ws-chat-canvas/static/js/main.b0ae5a77.chunk.js",
+    "main.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/main.b0ae5a77.chunk.js.map",
     "runtime-main.js": "https://checnev.github.io/ws-chat-canvas/static/js/runtime-main.aa75eff3.js",
     "runtime-main.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/runtime-main.aa75eff3.js.map",
     "static/css/2.53cbce06.chunk.css": "https://checnev.github.io/ws-chat-canvas/static/css/2.53cbce06.chunk.css",
-    "static/js/2.7e5e3430.chunk.js": "https://checnev.github.io/ws-chat-canvas/static/js/2.7e5e3430.chunk.js",
-    "static/js/2.7e5e3430.chunk.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/2.7e5e3430.chunk.js.map",
+    "static/js/2.bf983129.chunk.js": "https://checnev.github.io/ws-chat-canvas/static/js/2.bf983129.chunk.js",
+    "static/js/2.bf983129.chunk.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/2.bf983129.chunk.js.map",
     "static/js/3.9dee8f07.chunk.js": "https://checnev.github.io/ws-chat-canvas/static/js/3.9dee8f07.chunk.js",
     "static/js/3.9dee8f07.chunk.js.map": "https://checnev.github.io/ws-chat-canvas/static/js/3.9dee8f07.chunk.js.map",
     "index.html": "https://checnev.github.io/ws-chat-canvas/index.html",
     "static/css/2.53cbce06.chunk.css.map": "https://checnev.github.io/ws-chat-canvas/static/css/2.53cbce06.chunk.css.map",
-    "static/css/main.8f3d0c34.chunk.css.map": "https://checnev.github.io/ws-chat-canvas/static/css/main.8f3d0c34.chunk.css.map",
-    "static/js/2.7e5e3430.chunk.js.LICENSE.txt": "https://checnev.github.io/ws-chat-canvas/static/js/2.7e5e3430.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "https://checnev.github.io/ws-chat-canvas/static/media/MaterialIconsTwoTone-Regular.da439515.eot",
+    "static/css/main.bf7efe18.chunk.css.map": "https://checnev.github.io/ws-chat-canvas/static/css/main.bf7efe18.chunk.css.map",
+    "static/js/2.bf983129.chunk.js.LICENSE.txt": "https://checnev.github.io/ws-chat-canvas/static/js/2.bf983129.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "https://checnev.github.io/ws-chat-canvas/static/media/preloader.c3bd0db7.svg",
     "static/media/index.css": "https://checnev.github.io/ws-chat-canvas/static/media/roboto-vietnamese-400-normal.52cebac0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.aa75eff3.js",
     "static/css/2.53cbce06.chunk.css",
-    "static/js/2.7e5e3430.chunk.js",
-    "static/css/main.8f3d0c34.chunk.css",
-    "static/js/main.53e261ac.chunk.js"
+    "static/js/2.bf983129.chunk.js",
+    "static/css/main.bf7efe18.chunk.css",
+    "static/js/main.b0ae5a77.chunk.js"
   ]
 }

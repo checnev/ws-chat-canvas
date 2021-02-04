@@ -1,0 +1,10 @@
+<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="preloadGradient" gradientTransform="rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(255, 208, 78)"/>
+      <stop offset="50%" stop-color="rgb(236, 115, 128)"/>
+      <stop offset="100%" stop-color=" rgb(119, 221, 119)"/>
+    </linearGradient>
+  </defs>
+   <circle cx="50" cy="50" r="40" stroke="url('#preloadGradient')" stroke-width="15" fill-opacity="0" />
+</svg>
